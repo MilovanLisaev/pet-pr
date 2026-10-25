@@ -132,6 +132,28 @@ h1 {
 
 }
 
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+}
+
+.slider .card {
+  min-width: 280px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.slider::-webkit-scrollbar {
+  height: 8px;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: #2e7d32;
+  border-radius: 4px;
+}
+
 .hero {
   display: flex;
   align-items: flex-start;
@@ -145,10 +167,28 @@ h1 {
 }
 
 @media (max-width: 600px) {
+
   .hero {
     flex-direction: column;
     text-align: center;
   }
+  .hero-img {
+    margin: 0 auto;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .art-thumb {
+    height: 150px;
+  }
+  
+  .card {
+    padding: 10px;
+  }
+
 }
 
 @keyframes fadeIn {
