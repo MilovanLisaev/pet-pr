@@ -189,6 +189,11 @@ h1 {
     padding: 10px;
   }
 
+  .art-thumb {
+    height: 250px;
+    object-fit: contain;
+  }
+
 }
 
 @keyframes fadeIn {
