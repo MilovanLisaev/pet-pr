@@ -114,3 +114,17 @@ h1 {
   display: block;
   margin-bottom: 8px;
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .menu {
+    max-width: 100%;
+  }
+
+  .menu a {
+    padding: 14px 16px;
+  }
+}
