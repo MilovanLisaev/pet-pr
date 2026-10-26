@@ -38,6 +38,23 @@ h1 {
   background: #109bb4;
 }
 
+.site-header {
+  background: #177863;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.site-header h1 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
 .back {
   display: inline-block;
   padding: 6px 12px;
@@ -150,7 +167,7 @@ h1 {
   height: 8px;
 }
 .slider::-webkit-scrollbar-thumb {
-  background: #2e7d32;
+  background: #177863;
   border-radius: 4px;
 }
 
@@ -194,6 +211,28 @@ h1 {
     object-fit: contain;
   }
 
+}
+
+.modal {
+  border: none;
+  background: transparent;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  outline: none;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 8px;
+  object-fit: contain;
+  cursor: zoom-out;
 }
 
 @keyframes fadeIn {
