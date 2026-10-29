@@ -254,6 +254,64 @@ h1 {
   font-style: normal;
 }
 
+.spoiler {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.spoiler summary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  color: #2e7d32;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spoiler summary::-webkit-details-marker {
+  display: none; 
+}
+
+.spoiler summary::after {
+  content: '+';
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.spoiler[open] summary::after {
+  content: '−';
+}
+
+.spoiler > p, .spoiler > .card-grid {
+  padding: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Lora', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+}
+
 footer {
   text-align: center;
   margin-top: 40px;
