@@ -195,7 +195,7 @@ h1 {
   }
 
   .card-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
@@ -205,6 +205,8 @@ h1 {
   
   .card {
     padding: 10px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
   }
 
   .art-thumb {
@@ -253,6 +255,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
 
 .spoiler {
   background: white;
@@ -310,6 +313,33 @@ h1 {
   outline: none;
   border-color: #2e7d32;
   box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+}
+
+.event-banner {
+  font-size: 40px;
+  background: #fff3cd;
+  color: #674e03;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: "Comforter Brush", cursive;
+  font-weight: 400;
+  font-style: 40px;
+}
+
+.event-banner img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #674e03;
 }
 
 footer {
